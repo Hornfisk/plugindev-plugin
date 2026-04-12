@@ -1,0 +1,9 @@
+{
+  "name": "plugindev",
+  "version": "1.0.0",
+  "description": "Battle-tested patterns for building audio plugins with nih-plug and egui in Rust. Covers real-time safety, audio/GUI sync, DAW persistence, voice pools, sequencers, metering, saturation design, and debugging — distilled from shipping two commercial plugins.",
+  "author": "natalia",
+  "license": "MIT",
+  "repository": "https://github.com/natalia/plugindev-plugin",
+  "skills": ["plugindev"]
+}
