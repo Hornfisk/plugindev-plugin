@@ -1,0 +1,19 @@
+{
+  "name": "hornfisk-plugins",
+  "owner": {
+    "name": "Hornfisk"
+  },
+  "metadata": {
+    "description": "Hornfisk's Claude Code plugins"
+  },
+  "plugins": [
+    {
+      "name": "plugindev",
+      "source": {
+        "source": "github",
+        "repo": "Hornfisk/plugindev-plugin"
+      },
+      "description": "Battle-tested patterns for building audio plugins with nih-plug and egui in Rust."
+    }
+  ]
+}
