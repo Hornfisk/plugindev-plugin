@@ -21,19 +21,17 @@ Battle-tested patterns for building audio plugins with [nih-plug](https://github
 
 ## Install
 
-### Claude Code CLI
+In Claude Code, add this repo as a plugin marketplace and install the plugin:
 
-```bash
-claude --plugin-dir /path/to/plugindev-plugin
+```
+/plugin marketplace add Hornfisk/plugindev-plugin
+/plugin install plugindev@hornfisk-plugins
 ```
 
-Or clone into your plugins directory and reference from settings.
+To update later:
 
-### From GitHub
-
-```bash
-git clone https://github.com/YOUR_USERNAME/plugindev-plugin.git
-claude --plugin-dir ./plugindev-plugin
+```
+/plugin marketplace update hornfisk-plugins
 ```
 
 ## Structure
@@ -41,7 +39,8 @@ claude --plugin-dir ./plugindev-plugin
 ```
 plugindev-plugin/
 ├── .claude-plugin/
-│   └── plugin.json
+│   ├── marketplace.json      # Marketplace catalog
+│   └── plugin.json           # Plugin manifest
 ├── skills/
 │   └── plugindev/
 │       └── SKILL.md          # Main skill (320 lines)
